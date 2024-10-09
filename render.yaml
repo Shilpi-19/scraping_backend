@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ScrapBot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    envVars:
+      - key: PASSWORD
+        value: "abhay14tyagi"
+      - key: USERNAME
+        value: "14abhay2003"
+      - key: MONGO_URI
+        value: "mongodb+srv://14abhay2003:abhay14tyagi@cluster0.cgvg73u.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+      - key: JWT_SECRET
+        value: "abhaytyagi"
